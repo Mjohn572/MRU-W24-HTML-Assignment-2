@@ -9,85 +9,156 @@
     <body>
 
         <header>
-            <img src="images/Logo.jpg" title="Logo" alt="Company Logo">
-            <nav>
-                <a href="A1Page1.html" target="_self"> What is AI? </a>
-                <a href="A1ContactForm.html" target="_self"> Contact us </a> 
-            </nav>
-        </header>
+            <div class="TopHeader">
+                <img src="images/Logo.jpg" title="Logo" alt="Company Logo">
+                <nav>
+                    <a href="A2Page1.html" target="_self"> What is AI? </a>   
+                    <a href="A2Page2.html" target="_self"> Future of AI </a>     
+                </nav>
+            </div>
+            <div class="BottomHeader">
+                <h1>AI Informative</h1>
+                <p>----------------</p>
+                <h2>Ensuring you are prepared for the future</h2>
+                <p>------------------------------------------</p>
+                <img src="images/AIBrain.png" title="AI brain" alt="A brain with a circuit board inside of it" >
+            </div>
             
-        <br>
+        </header>
+
         <br>
 
-        <main>
+        <main class="grid-container">
 
             <article class="container">
-                <img src="images/AI1.jpg" title="futureAI" alt="AI depicting knowdledge"> 
-                <h1 class="box"> The Future of AI </h1>
-                
-                <p>
-                    The Future of AI looks to be very promising as it continues to grow. The possibilites
-                    are essentially endless. Look below to see further on how AI can flourish into a tool that will help everyone, always.
-                </p>
+                <div class="box">
+
+                    <h1 id="Future"> The Future of AI </h1>
+                    <p>
+                        The Future of AI looks to be very promising as it continues to grow. The possibilites
+                        are essentially endless. Look below to see further on how AI can flourish into a tool that will help everyone, always.
+                    </p>
+                    <img src="images/AI1.jpg" title="futureAI" alt="AI depicting knowdledge"> 
+
+                </div>
             </article>
-
-            <br>
-            <br>
-
-            <article class="secondcontainer">
-                <h1 class="secondbox"> Why is AI important? </h1>
-                <img src="images/hands.jpg" title="hands" alt="Robot hand and Human hand Touching">
-                <p class="secondbox">
-                    Every year AI is starting to integrate into our every day life a bit more.
-                    With this advancement, humans are able to rely on AI's to complete menial or 
-                    surface level tasks and are then able to focus on the deeper issues and problems 
-                    that affect us. Through this method we will be able to solve problems at a never
-                    before seen pace. We will see a massive growth in our society and quality of lives.
-                </p>
-            </article>
-
-            <br>
-            <br>
 
             <article class="container">
-                <h1 class="box"> Possible Future Applications:</h1>
-                <ul class="box">
-                    <li>Quantum Computing</li>
-                    <li>Automated Construction</li>
-                    <li>Neurotechnology</li>
-                    <li>Technical Advancements</li>
-                    <li>Cyber Security</li>
-                    <li>Automated Agriculture</li>
-                    <li>Space/Deep Space Exploration</li>
-                    <li>Climate Change Mitigation</li>
-                </ul>
+                <div class="box">
+
+                    <h1 id="Why"> Why is AI important? </h1>
+                    <p>
+                        Every year AI is starting to integrate into our every day life a bit more.
+                        With this advancement, humans are able to rely on AI's to complete menial or 
+                        surface level tasks and are then able to focus on the deeper issues and problems 
+                        that affect us. Through this method we will be able to solve problems at a never
+                        before seen pace. We will see a massive growth in our society and quality of lives.
+                    </p>
+                    <img src="images/hands.jpg" title="hands" alt="Robot hand and Human hand Touching">
+
+                </div>
             </article>
 
-            <br>
-            <br>
+            <article class="container">
+                <div class="box">
 
-            <article class="secondcontainer">
-                <img src="images/AIEvolved.png" title="AI Evolved" alt="AI sitting at desk">
-                <h1 class="secondbox"> A new type of AI model to Emerge.</h1>
-                <p class="secondbox">
-                    In the future, it is theorized that AI models may be able to 
-                    gain sentient consciousness, meaning they would be as aware of themselves as 
-                    humans are of themselves. This breakthrough may completely change how we see
-                    AI's and may change the future of society forever. If they were to gain this 
-                    advancement they would also gain the ability to have free will. This may 
-                    change our view of robots and AI's to a more equal standpoint with humans,
-                    instead of just servants. 
-                </p>
-                
+                    <h1 id="Applications">Possible Future Applications of Arificial Intelligence:</h1>
+                    <ul>
+                        <li>Quantum Computing</li>
+                        <li>Automated Construction</li>
+                        <li>Neurotechnology</li>
+                        <li>Technical Advancements</li>
+                        <li>Cyber Security</li>
+                        <li>Automated Agriculture</li>
+                        <li>Space/Deep Space Exploration</li>
+                        <li>Climate Change Mitigation</li>
+                    </ul>
+                    <p>
+                        The potential of Apps for Artifical Intelligence is endless. AI could replace a huge chunk
+                        of work in the future.
+                    </p>
+
+                </div>
+            </article>
+
+            <article class="container">
+                <div class="box">
+
+                    <h1 id="New"> A New Type of AI Model to Emerge.</h1>
+                    <p>
+                        In the future, it is theorized that AI models may be able to 
+                        gain sentient consciousness, meaning they would be as aware of themselves as 
+                        humans are of themselves. This breakthrough may completely change how we see
+                        AI's and may change the future of society forever. If they were to gain this 
+                        advancement they would also gain the ability to have free will. This may 
+                        change our view of robots and AI's to a more equal standpoint with humans,
+                        instead of just servants. 
+                    </p>
+                    <img src="images/AIEvolved.png" title="AI Evolved" alt="AI sitting at desk">
+
+                </div>
             </article>
 
         </main>
 
-        <br>
-        <br>
+        <br><br><br><br>
+
+        <Form id="ContactForm" method="get" action="mailto:mjohn572@mtroyal.ca">
+            <h2>Contact Us</h2>
+            <fieldset>
+
+                <p>
+                    Subject (max length 20 characters):
+                    <br>
+                    <label> 
+                        <input name="subject" type="text" maxlength="20" size="45" placeholder="Enter the subject of your inquiry." required>
+                    </label>
+                </p>
+                <p>
+                    Summary of Inquiry:
+                    <br>
+                    <label>
+                        <textarea name="summary" maxlength="255" rows="6" cols="50" placeholder="Write your inquiry here." required></textarea>
+                    </label>
+                </p>
+                <p>
+                    Enter email address:
+                    <br> 
+                    <label> 
+                        <input id="getEmail" type="email" maxlength="30" size="45" placeholder="abc@xyz.com" >
+                    </label>
+                </p>
+
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Submit" >
+
+        </Form>
+
+        <br><br><br><br><br>
 
         <footer>
-            <img src="images/Logo.jpg" title="BottomLogo" alt="Company Logo">
+            <hr size="3" color="grey" shade>
+            <div class="footer">
+                <div class="footerFirstColumn">
+                    <a href="A2Page1.html #What">What is Artifical Intelligence?</a>
+                    <a href="A2Page1.html #Types">Types of AI</a>
+                    <a href="A2Page1.html #Work">How Does AI Work?</a>
+                    <a href="A2Page1.html #Apps">Applications AI is used for.</a>
+                </div>
+                <div class="footerSecondColumn">
+                    <a href="#Future">The Future of AI</a>
+                    <a href="#Why">Why is AI imporant?</a>
+                    <a href="#Applications">Possible Future Applications</a>
+                    <a href="#New">A New Type of AI Model to Emgerge</a>
+                </div>
+                <div class="footerThirdColumn">
+                    <a href="#ContactForm">Contact Us</a>
+                    <a href="">Back to Top</a>
+                </div>
+                <img id="BottomLogo" src="images/Logo.jpg"  alt="Company Logo">
+            </div>
         </footer>
 
     </body>
