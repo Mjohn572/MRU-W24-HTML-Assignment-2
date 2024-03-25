@@ -36,6 +36,10 @@ nav {
    text-align: center;
 }
 
+.BottomHeader h2 {
+   font-size: 1.5em;
+}
+
 .BottomHeader img {
    width: 10%;
    height: 10%;
