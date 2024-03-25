@@ -61,6 +61,10 @@ a:hover {
    color: white;
 }
 
+/* When I tested the max-width as 590px, the window would only work with
+ * 588px, so I have adjusted it 2 higher so it will be in line with the 
+ * 590px test. 
+ */
 @media only screen and (max-width: 592px) {
    .grid-container {
       display: grid;
@@ -71,7 +75,20 @@ a:hover {
    }
  }
 
- @media screen and (min-width: 593px) {
+ /* Added extra gap between the grids as the grids sometimes stick 
+  * together or overlap when the window is small and in the 2x2 grid.
+  */
+ @media screen and (min-width: 593px) and (max-width: 792px)  {
+   .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin: 0 auto;
+      max-width: 75%;
+   }
+ }
+
+ @media screen and (min-width: 793px) {
    .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
